@@ -1,0 +1,39 @@
+button {
+  outline:0;background: var(--secondary); border:0;
+  width: 30px;
+  height: 30px;
+  font-weight: 800;
+  box-shadow: 2px 2px 1px var(--primary);
+  color: var(--primary);
+}
+button:hover {
+  color: var(--secondary);
+background: var(--primary);
+}
+
+#music {
+  position:absolute;
+  top: 0;
+  right: 50px;
+  animation-name: music-vstup;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  transition: all .8s;
+}
+
+@keyframes music-vstup {
+  0% {
+    opacity: 0;
+    transform: translateY(-2000px);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  80% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
