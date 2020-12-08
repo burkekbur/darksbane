@@ -154,6 +154,9 @@ th {
   body {
     padding: 0;
   }
+  * {
+    text-align: left;
+  }
   .sloupec {
     padding: 10px;
     margin: auto;
